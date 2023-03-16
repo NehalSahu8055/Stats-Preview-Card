@@ -1,0 +1,163 @@
+*{
+    font-family: 'Inter', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
+    color:hsla(0, 0%, 100%, 0.75);
+}
+
+body {
+  
+    /* background-color: #E6EFF6;
+    box-sizing: border-box; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%); */ 
+
+
+        /* clamp(min, val ,max) 
+        Minimum font size is 36px (y1) Maximum font size is 52px (y2)*/
+    /* font-size:clamp(2rem , 4vw + 1rem ,5.5rem); */
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-color:hsl(233, 47%, 7%);
+        
+    
+}
+
+.container{
+    display: flex;
+    /* width: 69.3125rem; */
+    /* height: 27.875rem; */
+    
+}
+.card1{
+    background-color: hsl(244, 38%, 16%);
+    display: flex;
+    width: 569px;
+    height: 446px;
+    border-radius:8px 0 0 8px;
+}
+
+.card1-row>.txt{
+    margin: 4.43rem 7.37rem 3.93rem 4.18rem;
+
+}
+.stats{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center;
+    align-items: center; */
+    margin:3.33rem 7.37rem 3.93rem  4.18rem;
+}
+
+.stats-11, .stats-12, .stats-13{
+    display: flex;
+    flex-direction: column;
+}.stats-11, .stats-12{
+    margin-right: 56px;
+}
+
+.stats span{
+    color:hsla(0, 0%, 100%, 0.6);
+}
+
+h1, h3{
+    color:hsl(0, 0%, 100%);
+}
+h2{
+    margin:0 0 1em 0;
+}
+
+.insights{
+    color:#AA59DA;
+}
+img{
+    border-radius:0 8px 8px 0;
+}
+.image{
+    position: relative;
+    height: 446px;
+    
+}
+.overlay{
+    position: absolute;
+    left:0;
+    top:0;
+    right: 0;
+    bottom: 0px;   
+    background-color:#A155CF;
+    opacity:60%;
+    border-radius:0 8px 8px 0;
+
+}
+
+@media only screen and (max-width:700px){
+    
+    .container{
+       
+        display: flex;
+        flex-direction: column-reverse;
+        gap:0px;
+    }
+    .image{
+        width: 327px;
+        height: 244.308px;
+    }
+    img{
+        border-radius: 8px 8px 0 0;
+        width: 327px;
+        height: 244.308px;
+    }
+    .overlay{
+        border-radius: 8px 8px 0 0;
+    }
+    .card1{
+        padding-top:3px;
+        width: 327px;
+        height: 541px;
+        text-align: center;
+        border-radius: 0 0 8px 8px;
+    }
+    .card1-row{
+        width: 327px;
+        height: 541px;
+    }
+    .card1-row>.txt{
+        margin: 2.1875rem 1.875rem 2.1875rem 1.875rem;
+    
+    }
+    .card2-row{
+        margin-top:-5px;
+    }
+    h1{
+        font-size:28px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    .stats{
+        
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin:0;
+    }
+    span{
+        font-size: 12px;
+        margin:0;
+    }
+    .stats-11, .stats-12{
+        margin:0;
+    }
+    .insights{
+        color:#AA59DA;
+        font-size: 28px;
+    }
+    
+    
+}
